@@ -2,6 +2,7 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 li {
@@ -51,7 +52,7 @@ a {
   flex-direction: column;
   text-align: center;
   justify-items: center;
-  padding: 100px 0 0 0;
+  padding: 80px 0 0 0;
   margin: 0;
 }
 
@@ -76,7 +77,7 @@ a {
 .btn {
   background-color: rgba(90, 133, 173, 1);
   width: 200px;
-  margin-top: 200px;
+  margin-top: 100px;
   border: 1px solid lightcyan;
   font-size: 1.5rem;
   font-weight: bold;
@@ -93,6 +94,16 @@ a {
 .footer-text {
   font-size: 2rem;
 }
+
+/* About page */
+#standard-page {
+  position: relative;
+  background: url(images/headercard.png) no-repeat center center/cover;
+  background-color: black;
+}
+
+
+
 
 /* Responsive settings */
 @media (max-width: 576px) {

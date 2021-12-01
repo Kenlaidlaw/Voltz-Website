@@ -1,0 +1,144 @@
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+/* About page */
+#standard-page {
+    position: relative;
+    background: url(images/headercard.png) no-repeat center center/cover;
+    height: 30vh;
+  background-color: black;
+}
+ 
+  /* nav bar */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(90, 133, 173, 0.75);
+  }
+  
+  .logo-main {
+    width: auto;
+    height: 80px;
+  }
+  
+  .nav-link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: lightcyan;
+  }
+  
+  .active {
+    border-bottom: 2px solid lightcyan;
+  }
+  
+  /* About Voltz */
+  
+ 
+  .btn {
+    background-color: rgba(90, 133, 173, 1);
+    width: 200px;
+    margin-top: 100px;
+    border: 1px solid lightcyan;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: lightcyan;
+    border: 1px solid rgba(90, 133, 173, 1);
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /* footer */
+  .main-page-footer {
+    background-color: rgba(90, 133, 173, 1);
+  }
+
+  .main-page-footer {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      
+  }
+
+  .statuatory-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stat-link a {
+      color: lightcyan;
+      font-size: 0.6rem;
+      padding: 5px 5px;
+  }
+
+  .footi {
+      color: lightcyan;
+      padding: 10px 10px;
+  }
+  .footi:hover {
+      color: white;
+      font-size: 2.2rem;
+  }
+  
+  
+  
+  
+  /* TAC page */
+  #COU, #ppolicy, #cpolicy {
+      background-color: #000;
+      color: lightcyan;
+      padding: 2rem 4rem;
+  }
+
+  #COU h2, #ppolicy h2, #cpolicy h2 {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid lightcyan;
+  }
+  #COU h4, #ppolicy h4, #cpolicy h4  {
+      padding-bottom: 1rem;
+  }
+
+  /* Responsive settings */
+  @media (max-width: 576px) {
+    /* navbar */
+    .logo-main {
+      width: auto;
+      height: 70px;
+    }
+  
+    /* main display */
+    .main-show {
+      padding: 50px 0 0 0;
+      margin: 0;
+    }
+    .btn {
+      width: 150px;
+      margin-top: 50px;
+    }
+  
+    /* footer */
+    .footer-text {
+      font-size: 1rem;
+
+    }
+  }
+  
