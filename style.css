@@ -1,0 +1,101 @@
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#showcase {
+  position: relative;
+  background: url(images/1345508810-medium.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+
+/* nav bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(90, 133, 173, 0.75);
+}
+
+.logo-main {
+  width: auto;
+  height: 100px;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: lightcyan;
+}
+
+.active {
+  border-bottom: 2px solid lightcyan;
+}
+
+/* main display */
+.main-show {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  padding: 100px 0 0 0;
+  margin: 0;
+}
+
+.main-text {
+  background-color: rgba(90, 133, 173, 0.5);
+  border-radius: 25px;
+  margin: 0;
+}
+
+.btn {
+  background-color: rgba(90, 133, 173, 1);
+  width: 200px;
+  margin-top: 200px;
+  border: 1px solid lightcyan;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: lightcyan;
+  border: 1px solid rgba(90, 133, 173, 1);
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+/* Responsive settings */
+@media (max-width: 576px) {
+  /* navbar */
+  .logo-main {
+    width: auto;
+    height: 70px;
+  }
+
+  /* main display */
+  .main-show {
+    padding: 50px 0 0 0;
+    margin: 0;
+  }
+  .btn {
+    width: 150px;
+    margin-top: 50px;
+  }
+
+  /* footer */
+  .footer-text {
+    font-size: 1rem;
+  }
+}
