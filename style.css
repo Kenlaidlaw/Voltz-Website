@@ -32,8 +32,9 @@ a {
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin-left: 25px;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
@@ -60,6 +61,18 @@ a {
   margin: 0;
 }
 
+.main-show--heading {
+  color: lightcyan;
+}
+
+.main-show--text {
+  font-size: 1.4rem;
+}
+
+.main-show--subtext {
+  font-size: 0.8rem;
+}
+
 .btn {
   background-color: rgba(90, 133, 173, 1);
   width: 200px;
@@ -74,6 +87,11 @@ a {
   border: 1px solid rgba(90, 133, 173, 1);
   color: black;
   transition: 0.5s ease-in-out;
+}
+
+/* footer */
+.footer-text {
+  font-size: 2rem;
 }
 
 /* Responsive settings */
