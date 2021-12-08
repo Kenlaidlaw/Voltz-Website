@@ -4,6 +4,19 @@ body * {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 li {
   list-style: none;
 }
@@ -32,17 +45,18 @@ a {
 }
 
 .nav-link {
+  font-weight: 700;
   font-size: 1.8rem;
-  font-weight: bold;
   margin-left: 25px;
+  font-family: "Encode Sans", sans-serif;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: lightcyan;
+  color: #e2f1ff;
 }
 
 .active {
-  border-bottom: 2px solid lightcyan;
+  border-bottom: 2px solid #c9d3dc;
 }
 
 /* main display */
@@ -55,54 +69,110 @@ a {
   margin: 0;
 }
 
-.main-text {
-  background-color: rgba(90, 133, 173, 0.5);
-  border-radius: 25px;
-  margin: 0;
-}
-
 .main-show--heading {
-  color: lightcyan;
+  color: #111111;
+  font-size: 4rem;
 }
 
 .main-show--text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .main-show--subtext {
   font-size: 0.8rem;
 }
 
-.btn {
-  background-color: rgba(90, 133, 173, 1);
+.btn-solid {
+  background-color: #e2f1ff;
   width: 200px;
-  margin-top: 100px;
-  border: 1px solid lightcyan;
-  font-size: 1.5rem;
+  margin: 40px 20px;
+  border: 2px solid #c9d3dc;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.btn:hover {
-  background-color: lightcyan;
-  border: 1px solid rgba(90, 133, 173, 1);
+.btn-solid:hover,
+.btn-outline:hover {
+  background-color: #c4c4c4;
+  border: 2px solid rgba(90, 133, 173, 1);
   color: black;
-  transition: 0.5s ease-in-out;
+}
+
+.btn-outline {
+  width: 200px;
+  margin: 40px 20px;
+  border: 2px solid #c9d3dc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn-outline a {
+  color: #e2f1ff;
+}
+
+.btn-outline:hover a {
+  color: black;
 }
 
 /* footer */
-.footer-text {
-  font-size: 2rem;
+.footer__icons-main i {
+  color: #e2f1ff;
 }
 
-/* About page */
-#standard-page {
-  position: relative;
-  background: url(images/headercard.png) no-repeat center center/cover;
-  background-color: black;
+/* About Voltz */
+.art_header {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e2f1ff;
+  background-color: rgba(90, 133, 173, 0.4);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.about_images {
+  max-width: 450px;
+  height: auto;
+}
+
+/* footer */
+.main-page-footer {
+  background-color: rgba(90, 133, 173, 0.7);
+}
+
+.main-page-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.statuatory-list {
+  display: flex;
+  justify-content: center;
+}
+
+.stat-link a {
+  color: #e2f1ff;
+  font-size: 0.6rem;
+  padding: 5px 5px;
+}
+
+.footi {
+  color: black;
+  padding: 10px 10px;
+}
+.footi:hover {
+  color: white;
+  font-size: 2.2rem;
 }
 
 /* Responsive settings */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* navbar */
   .logo-main {
     width: auto;
@@ -115,12 +185,24 @@ a {
     margin: 0;
   }
   .btn {
-    width: 150px;
+    width: 180px;
     margin-top: 50px;
+  }
+  .btn-solid,
+  .btn-outline {
+    font-size: 1rem;
   }
 
   /* footer */
   .footer-text {
     font-size: 1rem;
+  }
+
+  /* about pages */
+
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 2;
+    background-color: rgba(43, 93, 139, 0.4);
   }
 }

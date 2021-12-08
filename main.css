@@ -2,7 +2,6 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
 }
 
 li {
@@ -16,9 +15,20 @@ a {
 /* About page */
 #standard-page {
   position: relative;
-  background: url(images/headercard.png) no-repeat center center/cover;
-  height: 30vh;
-  background-color: black;
+  background: url(images/1345508810-medium.jpg) no-repeat center center/cover;
+  filter: 5px;
+  height: 100vh;
+  /* background-color: black; */
+  box-shadow: 5px 0px 100px rgba(90, 133, 173, 1);
+  /* box-shadow: inset 0px 0px 0px 40px rgba(90, 133, 173, 1); */
+}
+
+.opt_color {
+  color: #e2f1ff;
+}
+
+.opt_color2 {
+  color: #c9d3dc;
 }
 
 /* nav bar */
@@ -47,6 +57,10 @@ a {
   border-bottom: 2px solid lightcyan;
 }
 
+/* .main-show {
+  max-width: 600px;
+} */
+
 /* About Voltz */
 
 .btn {
@@ -67,7 +81,7 @@ a {
 
 /* footer */
 .main-page-footer {
-  background-color: rgba(90, 133, 173, 1);
+  background-color: rgba(90, 133, 173, 0.7);
 }
 
 .main-page-footer {
@@ -89,7 +103,7 @@ a {
 }
 
 .footi {
-  color: lightcyan;
+  color: black;
   padding: 10px 10px;
 }
 .footi:hover {
@@ -99,8 +113,13 @@ a {
 
 /* about page */
 #aboutVoltz {
-  background-color: #000;
-  color: lightcyan;
+  /* background-color: #000; */
+  color: black;
+}
+
+.black_bg {
+  background-color: rgba(90, 133, 173, 0.7);
+  border-radius: 25px;
 }
 
 .about_images {
