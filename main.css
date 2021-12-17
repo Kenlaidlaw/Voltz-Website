@@ -15,12 +15,19 @@ a {
 /* About page */
 #standard-page {
   position: relative;
-  background: url(images/1345508810-medium.jpg) no-repeat center center/cover;
+  background: url(images/headercard.png) no-repeat center center/cover;
   filter: 5px;
-  height: 100vh;
-  /* background-color: black; */
-  box-shadow: 5px 0px 100px rgba(90, 133, 173, 1);
-  /* box-shadow: inset 0px 0px 0px 40px rgba(90, 133, 173, 1); */
+  height: 30vh;
+}
+
+#standard-page::before {
+  content: "";
+  position: absolute;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .opt_color {
@@ -56,10 +63,6 @@ a {
 .active {
   border-bottom: 2px solid lightcyan;
 }
-
-/* .main-show {
-  max-width: 600px;
-} */
 
 /* About Voltz */
 
@@ -111,12 +114,6 @@ a {
   font-size: 2.2rem;
 }
 
-/* about page */
-#aboutVoltz {
-  /* background-color: #000; */
-  color: black;
-}
-
 .black_bg {
   background-color: rgba(90, 133, 173, 0.7);
   border-radius: 25px;
@@ -129,8 +126,7 @@ a {
 
 /* Contacts page */
 .contact-intro {
-  background-color: black;
-  color: lightcyan;
+  color: #4c4c4c;
 }
 
 .fas {
