@@ -4,30 +4,43 @@ body * {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* About page */
 #standard-page {
   position: relative;
   background: url(images/headercard.png) no-repeat center center/cover;
-  filter: 5px;
-  height: 30vh;
+  height: 40vh;
 }
 
 #standard-page::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10vh;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  height: 75%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(90, 133, 173, 0.5), rgba(90, 133, 173, 0.25), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
 .opt_color {
@@ -47,21 +60,22 @@ a {
 
 .logo-main {
   width: auto;
-  height: 80px;
+  height: 100px;
 }
 
 .nav-link {
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.8rem;
   margin-left: 25px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: lightcyan;
+  color: #e2f1ff;
 }
 
 .active {
-  border-bottom: 2px solid lightcyan;
+  border-bottom: 2px solid #c9d3dc;
 }
 
 /* About Voltz */
@@ -126,7 +140,8 @@ a {
 
 /* Contacts page */
 .contact-intro {
-  color: #4c4c4c;
+  background-color: #000;
+  color: #e2f1ff;
 }
 
 .fas {
