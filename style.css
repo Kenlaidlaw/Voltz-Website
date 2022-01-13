@@ -20,7 +20,6 @@ h6 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
   letter-spacing: 2px;
 }
 
@@ -52,7 +51,13 @@ a {
   left: 0;
   width: 100%;
   height: 75%;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(90, 133, 173, 0.5), rgba(90, 133, 173, 0.25), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(0deg, rgba(90, 133, 173, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+
+#standard-page-alt {
+  position: relative;
+  background: url(images/headercard.png) no-repeat center center/cover;
+  height: 40vh;
 }
 
 /* nav bar */
@@ -92,73 +97,31 @@ a {
   margin: 0;
 }
 
-.main-show--heading {
-  color: #111111;
-  font-size: 4rem;
-}
-
-.main-show--text {
-  font-size: 1.6rem;
-}
-
-.main-show--subtext {
-  font-size: 0.8rem;
-}
-
 .btn-solid {
   background-color: #e2f1ff;
   width: 200px;
-  margin: 40px 20px;
-  border: 2px solid #c9d3dc;
+  border: 2px solid #fff;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.btn-solid:hover,
-.btn-outline:hover {
-  background-color: #c4c4c4;
-  border: 2px solid rgba(90, 133, 173, 1);
-  color: black;
+.btn-solid:hover {
+  background-color: rgba(90, 133, 173, 1);
+  border: 2px solid #fff;
 }
 
-.btn-outline {
-  width: 200px;
-  margin: 40px 20px;
-  border: 2px solid #c9d3dc;
-  font-size: 1.2rem;
-  font-weight: bold;
+.btn-solid:hover a {
+  color: #fff;
 }
 
-.btn-outline a {
-  color: #e2f1ff;
-}
-
-.btn-outline:hover a {
-  color: black;
+/* Main Website pages */
+.main-color {
+  background-color: rgba(90, 133, 173, 1);
 }
 
 /* footer */
 .footer__icons-main i {
   color: #e2f1ff;
-}
-
-/* About Voltz */
-.art_header {
-  color: #111111;
-}
-
-.about-text {
-  font-size: 1.5rem;
-  color: #e2f1ff;
-  background-color: rgba(90, 133, 173, 0.6);
-  padding: 20px;
-  border-radius: 25px;
-  line-height: 2.4rem;
-}
-
-.about_images {
-  max-width: 450px;
-  height: auto;
 }
 
 /* footer */
@@ -193,10 +156,6 @@ a {
   font-size: 2.2rem;
 }
 
-.contact-intro {
-  color: #e2f1ff;
-}
-
 /* Responsive settings */
 @media (max-width: 768px) {
   /* navbar */
@@ -214,8 +173,7 @@ a {
     width: 180px;
     margin-top: 50px;
   }
-  .btn-solid,
-  .btn-outline {
+  .btn-solid {
     font-size: 1rem;
   }
 
@@ -225,10 +183,4 @@ a {
   }
 
   /* about pages */
-
-  .about-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    background-color: rgba(43, 93, 139, 0.4);
-  }
 }
