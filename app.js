@@ -4,8 +4,8 @@ $(".slider").slick({
   slideToShow: 1,
   slideToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 2000,
 });
 
 // Get the current year for the copyright
-$('#year').text(new Date().getFullYear());
+$("#year").text(new Date().getFullYear());

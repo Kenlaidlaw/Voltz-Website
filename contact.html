@@ -27,13 +27,13 @@
     <title>Voltz - contact</title>
   </head>
   <body>
-    <div id="standard-page" class="homepage">
+    <div id="standard-page">
       <!-- Navbar -->
       <div class="navbar navbar-custom navbar-expand-lg navbar-light nav-bar px-5">
         <div class="nav-logo">
           <img src="/images/Black logo - no background.png" alt="Voltz logo in black" class="logo-main navbar-brand" />
         </div>
-        <div class="nav-menu text-dark">
+        <div class="nav-menu">
           <button
             class="navbar-toggler"
             type="button"
@@ -50,14 +50,11 @@
               <li class="nav-item">
                 <a href="index.html" class="nav-link px-3">Home</a>
               </li>
-              <!-- <li class="nav-item">
-                <a href="about.html" class="nav-link px-3">About</a>
-              </li> -->
               <li class="nav-item">
                 <a href="services.html" class="nav-link px-3">Services</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link active px-3">Contact</a>
+                <a href="contact.html" class="nav-link activ px-3">Contact</a>
               </li>
             </ul>
           </div>
@@ -81,18 +78,19 @@
               <p class="input-label mb-2">Name</p>
               <div class="input-group flex-nowrap mb-3">
                 <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user fa-2x"></i></span>
-                <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping" />
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping" />
               </div>
               <p class="input-label mb-2">Email - we only use your email to respond.</p>
               <div class="input-group flex-nowrap mb-3">
                 <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope fa-2x"></i></span>
-                <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping" />
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping" />
               </div>
               <p class="input-label mb-2">Message</p>
               <div class="input-group flex-nowrap mb-3">
                 <span class="input-group-text" id="addon-wrapping"><i class="fas fa-pencil-alt fa-2x"></i></span>
-                <textarea class="form-control" placeholder="Message" aria-label="message" aria-describedby="addon-wrapping"></textarea>
+                <textarea type="text" name="message" id="message" class="form-control" placeholder="Message" aria-label="message" aria-describedby="addon-wrapping"></textarea>
               </div>
+              <input type="submit" value="Submit" class="btn btn-solid btn-lg mt-3" />
             </form>
           </div>
           <div class="col-lg-3 px-5 align-self-center">

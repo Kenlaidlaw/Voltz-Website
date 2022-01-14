@@ -83,8 +83,9 @@ a {
   color: #e2f1ff;
 }
 
-.active {
+.activ {
   border-bottom: 2px solid #c9d3dc;
+  color: black !important;
 }
 
 /* main display */
@@ -178,6 +179,11 @@ a {
   }
 
   /* footer */
+  .main-page-footer {
+    flex-direction: column-reverse;
+    padding: 1rem 0;
+  }
+
   .footer-text {
     font-size: 1rem;
   }
