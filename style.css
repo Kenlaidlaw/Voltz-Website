@@ -54,12 +54,6 @@ a {
   background-image: linear-gradient(0deg, rgba(90, 133, 173, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
-#standard-page-alt {
-  position: relative;
-  background: url(images/headercard.png) no-repeat center center/cover;
-  height: 40vh;
-}
-
 /* nav bar */
 .nav-bar {
   display: flex;
@@ -100,7 +94,7 @@ a {
 
 .btn-solid {
   background-color: #e2f1ff;
-  width: 200px;
+  width: 240px;
   border: 2px solid #fff;
   font-size: 1.2rem;
   font-weight: bold;
@@ -115,9 +109,23 @@ a {
   color: #fff;
 }
 
+.call_action_mobile {
+  display: none;
+}
+
 /* Main Website pages */
 .main-color {
   background-color: rgba(90, 133, 173, 1);
+}
+
+.secondary-para {
+  font-size: 1.5rem;
+}
+
+/* Services page */
+.list-item {
+  padding: 5px 0;
+  font-weight: 500;
 }
 
 /* footer */
@@ -186,6 +194,14 @@ a {
 
   .footer-text {
     font-size: 1rem;
+  }
+
+  .call_action_mobile {
+    display: block;
+  }
+
+  .call_action_main {
+    display: none;
   }
 
   /* about pages */
