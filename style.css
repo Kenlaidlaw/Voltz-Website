@@ -205,4 +205,9 @@ a {
   }
 
   /* about pages */
+  /* Services page */
+  .list-item {
+    padding: 2px 0;
+    font-weight: 500;
+  }
 }
